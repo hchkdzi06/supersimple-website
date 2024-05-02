@@ -1,0 +1,426 @@
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    vertical-align: top;
+    transition: opacity 0.15s;
+  }
+   .subscribe-button:hover {
+    opacity: 0.7;
+   }
+   .subscribe-button:active{
+    opacity: 0.3;
+   }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(37, 65, 249);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(37, 65, 249);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s,
+      color 0.2s;
+    
+  }
+  .join-button:hover{
+    background-color: rgb(37, 65, 249);
+    color: white;
+  }
+  .join-button:active{
+    opacity: 0.7;
+  }
+
+  .tweet-button {
+    background-color: rgb(37, 65, 249);
+    border: none;
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.2s;
+  }
+  .tweet-button:hover {
+    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.2);
+  }
+ 
+  
+
+  .req-now-button{
+    background-color: black;
+    border: none;
+    color: white;
+    height: 36px;
+    width: 115px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.3s;
+  }
+  .req-now-button:hover{
+    opacity: 0.7;
+  }
+
+  .add-to-cart-button{
+    background-color: rgb(240, 240, 30);
+    border: none;
+    color: black;
+    border-radius: 18px;
+    height: 36px;
+    width: 180px;
+    font-weight:550;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+  }
+  .add-to-cart-button:hover{
+    background-color: rgb(200, 200, 21);
+  }
+
+  .singup-button{
+    background-color: rgb(49, 187, 49);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    height: 36px;
+    width: 95px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: box-shadow 0.3s;
+  }
+  .singup-button:hover{
+    box-shadow: 0px  5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .get-started-button{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    height: 36px;
+    width: 125px;
+    font-size: 16;
+    font-weight:549;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+  }
+  .get-started-button:hover{
+    background-color: rgb(103, 31, 170);
+  }
+
+  .download-button{
+    background-color: white;
+    color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 4px;
+    height: 36px;
+    width: 110px;
+    font-weight:bold;
+    cursor: pointer;
+    transition: background-color 0.3s,
+      color 0.3s;
+  }
+  .download-button:hover{
+    background-color: gray;
+    color:white
+  }
+
+  .apply-on-company-website{
+    background-color: blue;
+    border: none;
+    border-radius: 17px;
+    color: white;
+    font-weight: bold;
+    height: 36px;
+    width: 215px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s;
+  }
+  .apply-on-company-website:hover{
+    background-color: rgb(2, 2, 202);
+  }
+
+  .save-button{
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: blue;
+    height: 36px;
+    width: 85px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s,
+    border-width 0.1s;
+  }  
+  .save-button:hover{
+    background-color: rgba(0, 0, 255, 0.204);
+    border-width: 2px;
+  }
+
+  .amazon-link{
+    font-size: 22px;
+    color: rgb(0, 113, 133);
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .amazon-link:hover{
+    color:rgb(255, 140, 0);
+  }
+  .nike-text{
+    font-size: 33px;
+    font-weight: bold;
+  }
+  .prise-text{
+    font-size: 23px;
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+  }
+  .free-delivery-text{
+    font-size: 23px;
+    font-weight: 545;
+  }
+  .amazon-add-to-cart-button{
+    background-color: rgb(255, 216, 20);
+    font-size: 15px;
+    font-weight: 550;
+    border: none;
+    height: 36px;
+    width: 130px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 7px;
+    transition: background-color 0.3s;
+  }
+  .amazon-add-to-cart-button:hover{
+    background-color: rgb(204, 173, 18);
+  }
+  .amazon-add-to-cart-button:active{
+    opacity: 0.5;
+  }
+  .amazon-buy-now-button{
+    background-color: rgb(255, 164, 28);
+    font-size: 15px;
+    font-weight: 550;
+    border: none;
+    height: 36px;
+    width: 120px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .amazon-buy-now-button:hover{
+    background-color:  rgb(235, 141, 0);
+  }
+  .amazon-buy-now-button:active{
+    opacity: 0.5;
+  }
+
+  .stretch-button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: padding-left 0.5s,
+      padding-right 0.5s,
+      padding-top 0.5s,
+      padding-bottom 0.5s;
+  }
+  .stretch-button:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .shadow-buuton{
+    background-color: green;
+    color: white;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    transition: margin-top 0.2s,
+    margin-left 0.2px;
+  }
+  .shadow-buuton:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .one-button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    transition: padding-left 0.5s,
+      padding-right 0.5s;
+  }
+  .one-button:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .two-button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    transition: padding-left 0.5s,
+      padding-right 0.5s;
+  }
+  .two-button:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .three-button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    transition: padding-left 0.5s,
+      padding-right 0.5s;
+  }
+  .three-button:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN my channel
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+
+<p>
+  <button class="req-now-button">
+    Request now
+  </button>
+
+  <button class="add-to-cart-button">
+    Add to Cart
+  </button>
+
+  <button class="singup-button">
+    Sing up
+  </button>
+</p>
+<p>
+  <button class="get-started-button">
+    Get started
+  </button>
+
+  <button class="download-button">
+    Download
+  </button>
+</p>
+<p>
+  <button class="apply-on-company-website">
+    Apply on company website
+  </button>
+
+  <button class="save-button">
+    Save
+  </button>
+</p>
+
+
+<a class="amazon-link" href="https://www.amazon.com/" target="_blank">
+  Back to Amazon
+</a>
+<p class="nike-text">
+  Nike Black Running Shoes
+</p>
+<p class="prise-text">
+  $39 - in stock.
+</p>
+<p class="free-delivery-text">
+  Free delivery tomorrow
+</p>
+<p>
+  <button  class="amazon-add-to-cart-button">
+    Add to Cart
+  </button>
+  <button class="amazon-buy-now-button">
+    Buy now
+  </button>
+</p>
+<p>
+  <button class='stretch-button'>
+    Stretch
+  </button>
+</p>
+<p>
+  <button class="shadow-buuton"> 
+    Shadow
+  </button>
+</p>
+<p>
+  <button class="one-button">
+    One
+  </button>
+  <button class="two-button">
+    Two
+  </button>
+  <button class="three-button">
+    Three
+  </button>
+</p>
